@@ -116,7 +116,7 @@ class WAInterface(threading.Thread):
                 if not self.connected:
                     self.methodsInterface.call("auth_login", (self.username, self.password))
                 time.sleep(0.5)
-                #raw_input()
+                raw_input()
         finally:
             info("Main loop closing")
             self.connected = False
